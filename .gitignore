@@ -1,0 +1,12 @@
+.DS_Store
+.idea/.DS_Store
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/TC-Frontend.iml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/scopes/scope_settings.xml
+node_modules
