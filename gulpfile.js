@@ -103,19 +103,6 @@ gulp.task("js", function(){
 /* ---------------------------------------------------------------------*/
 /* HELPERS SUB TASK FOR "MAIN" TASK, USED FOR PROJECTED BASE COMPONENTS */
 
-gulp.task("js:collections", function(){
-    return gulp.src(config.paths.jscollections.src)
-        .pipe(gulpif(argv.min, uglify()))
-        .pipe(replace(/jsx!/g, ''))//remove jsx! in react source, do not use jsxcompiler in production
-        .pipe(gulp.dest(config.paths.jscollections.dest));
-});
-
-gulp.task("js:language", function(){
-    return gulp.src(config.paths.jslanguage.src)
-        .pipe(gulpif(argv.min, uglify()))
-        .pipe(gulp.dest(config.paths.jslanguage.dest));
-});
-
 
 gulp.task("js:libs", function(){
     return gulp.src(config.paths.jslibs.src)

@@ -4,8 +4,6 @@ define([
     React
 ){
     var WelcomeComponent = React.createClass({
-        componentDidMount: function() {
-        },
         render: function(){
             return (
                 <h1>Hello world</h1>
